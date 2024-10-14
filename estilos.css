@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section{
+    background-color:  #DFDFDF;
+    padding: 1em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+.types{
+    display: flex;
+    justify-content: center;
+}
+h1{
+    color:  #4682B4;
+    border-bottom:solid white 1px;
+    text-align: center;
+    margin-bottom: .5em;
+}
+textarea{
+    border:solid steelblue 1px;
+}
+li{
+    list-style: none;
+}
+.nth-child{
+    margin-left: .5em;
+}
+.nth-of-type{
+    margin-right: .5em;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5em
+}
+input[type="text"], input[type="email"], input[type=submit], textarea{
+    border: 2px solid steelblue;
+}
+form div:first-child{
+    display: flex;
+    flex-direction: column;
+    gap:.5em;
+    align-items: stretch;
+    width: 100%;
+}
+.nth-of-type li:nth-of-type(2n+1){
+    background-color: blue;
+    color: white;
+    font-size: 2em;
+}
+.nth-of-type div:nth-of-type(2n+1){
+    background-color: orange;
+    color: white;
+    font-size: 2em;
+}
+.nth-of-type strong{
+    color: red;
+    font-size: 1.5em;
+}
+.nth-of-type div, .nth-of-type li{
+    padding: 2px;
+    margin: 6px;
+    border: 1px solid black;
+}
+.nth-child li:nth-of-type(2n+1){
+   background-color: green;
+}
+.nth-child li:nth-of-type(2n){
+    background-color: red;
+ }
+.nth-child li{
+    padding: 2px;
+    margin: 6px;
+    color: white;
+}
+form :disabled{
+    background-color: #666;
+    cursor: no-drop;
+}
+form input[type="email"]:enabled{
+    background-color: yellow;
+    color: green;
+}
+form input[type="radio"]:checked + label{
+    font-weight:lighter;
+    
+}
